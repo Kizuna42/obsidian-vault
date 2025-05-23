@@ -1,9 +1,9 @@
 {
   "amazonRegion": "japan",
-  "highlightsFolder": "/",
+  "highlightsFolder": "20_literature/kindle",
   "lastSyncMode": "amazon",
   "isLoggedIn": true,
   "syncOnBoot": true,
   "downloadBookMetadata": true,
-  "lastSyncDate": "2025-05-23T16:44:39.602Z"
+  "lastSyncDate": "2025-05-23T16:57:20.788Z"
 }
