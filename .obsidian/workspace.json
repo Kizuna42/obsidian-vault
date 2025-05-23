@@ -11,14 +11,15 @@
             "id": "6153ce9208a0f48d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "tags.md.md",
-                "mode": "source",
-                "source": false
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "tags.md"
+              "icon": "diff",
+              "title": "Diff: workspace.json"
             }
           }
         ]
@@ -190,7 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -208,6 +209,7 @@
   },
   "active": "6153ce9208a0f48d",
   "lastOpenFiles": [
+    "tags.md.md",
     "templates",
     "99_archive",
     "90_assets",
@@ -216,7 +218,6 @@
     "30_ideas",
     "00_inbox",
     "20_literature/meetings/空調システム室内温度予測モデル - 概要.md",
-    "tags.md.md",
     "10_daily",
     "2025-05-23.md",
     "20_literature/youtube",
@@ -243,7 +244,6 @@
     "20_literature/kindle/慶一郎-相対化する知性---人工知能が世界の見方をどう変えるのか.md",
     "20_literature/kindle/彰-聖書がわかれば世界が見える.md",
     "20_literature/kindle/山崎元、堀江貴文-決定版！　お金の増やし方＆稼ぎ方.md",
-    "20_literature/kindle",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
