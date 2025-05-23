@@ -185,7 +185,8 @@
               "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -204,7 +205,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6153ce9208a0f48d",
+  "active": "fbe147c5c3a2c323",
   "lastOpenFiles": [
     "2025-05-22.md",
     "README.md",
