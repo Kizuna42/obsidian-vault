@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-05-23.md",
+                "file": "tags.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-05-23"
+              "title": "tags.md"
             }
           }
         ]
@@ -207,10 +207,15 @@
       "obsidian-kindle-plugin:Sync your Kindle highlights": false
     }
   },
-  "active": "6153ce9208a0f48d",
+  "active": "fbe147c5c3a2c323",
   "lastOpenFiles": [
-    "meeting/空調システム室内温度予測モデル - 概要.md",
+    "00_inbox",
+    "20_literature/meetings/空調システム室内温度予測モデル - 概要.md",
+    "tags.md.md",
+    "10_daily",
     "2025-05-23.md",
+    "20_literature/youtube",
+    "20_literature/web",
     "20_literature/kindle/ケリー篠沢-漫画家が書いた 人物からわかる「旧約聖書」.md",
     "20_literature/kindle/ダレル・ハフ、高木秀玄-統計でウソをつく法.md",
     "20_literature/kindle/スペンサー・ジョンソン、門田美鈴-チーズはどこへ消えた？.md",
@@ -233,14 +238,12 @@
     "20_literature/kindle/慶一郎-相対化する知性---人工知能が世界の見方をどう変えるのか.md",
     "20_literature/kindle/彰-聖書がわかれば世界が見える.md",
     "20_literature/kindle/山崎元、堀江貴文-決定版！　お金の増やし方＆稼ぎ方.md",
-    "20_literature/kindle/尾原和啓-モチベーション革命　稼ぐために働きたくない世代の解体書.md",
-    "20_literature/kindle/安宅和人-イシューからはじめよ――知的生産の「シンプルな本質」.md",
     "20_literature/kindle",
     "20_literature",
     "Excalidraw",
     "Recording 20250522200700.m4a",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "meeting"
+    "20_literature/meetings"
   ]
 }

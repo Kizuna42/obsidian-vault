@@ -6,6 +6,10 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiNotebookPen",
+      "LiBook",
+      "LiCalendar",
+      "LiBookText",
       "LiArrowRightCircle"
     ],
     "recentlyUsedIconsSize": 5,
@@ -30,5 +34,6 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "2025-05-23.md": "LiArrowRightCircle"
+  "10_daily": "LiCalendar",
+  "20_literature": "LiNotebookPen"
 }
