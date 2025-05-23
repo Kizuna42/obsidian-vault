@@ -190,7 +190,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412.5
+    "width": 412.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -205,12 +206,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fbe147c5c3a2c323",
+  "active": "6153ce9208a0f48d",
   "lastOpenFiles": [
     "2025-05-22.md",
     "README.md",
-    "meeting/空調システム室内温度予測モデル - 概要.md",
     "Excalidraw/Drawing 2025-05-22 20.17.00.excalidraw.md",
+    "meeting/空調システム室内温度予測モデル - 概要.md",
     "Excalidraw",
     "202505222007.md",
     "Recording 20250522200700.m4a",
