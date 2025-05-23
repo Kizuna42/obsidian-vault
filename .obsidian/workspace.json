@@ -11,10 +11,14 @@
             "id": "6153ce9208a0f48d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "meeting/空調システム室内温度予測モデル - 概要.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "空調システム室内温度予測モデル - 概要"
             }
           }
         ]
@@ -170,14 +174,22 @@
               "icon": "links-going-out",
               "title": "Outgoing links from 空調システム室内温度予測モデル - 概要"
             }
+          },
+          {
+            "id": "9e5d541774f132de",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 412.5,
-    "collapsed": true
+    "width": 412.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,8 +206,9 @@
   },
   "active": "6153ce9208a0f48d",
   "lastOpenFiles": [
-    "meeting/空調システム室内温度予測モデル - 概要.md",
     "2025-05-22.md",
+    "README.md",
+    "meeting/空調システム室内温度予測モデル - 概要.md",
     "Excalidraw/Drawing 2025-05-22 20.17.00.excalidraw.md",
     "Excalidraw",
     "202505222007.md",
