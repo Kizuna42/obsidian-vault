@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiNotebookPen",
-      "LiBook",
-      "LiCalendar",
-      "LiBookText",
-      "LiArrowRightCircle"
+      "LiCheckSmall",
+      "LiCode2",
+      "LiScriptEngine",
+      "LiFlag",
+      "LiLightbulb"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -35,5 +35,10 @@
     "useInternalPlugins": false
   },
   "10_daily": "LiCalendar",
-  "20_literature": "LiNotebookPen"
+  "20_literature": "LiNotebookPen",
+  "00_inbox": "LiInbox",
+  "30_ideas": "LiLightbulb",
+  "40_projects": "LiFlag",
+  "80_scripts": "LiCode2",
+  "99_archive": "LiCheckSmall"
 }

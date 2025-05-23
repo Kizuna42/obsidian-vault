@@ -10,5 +10,6 @@
   "newFileLocation": "current",
   "attachmentFolderPath": "./",
   "alwaysUpdateLinks": true,
-  "uriCallbacks": false
+  "uriCallbacks": false,
+  "userIgnoreFilters": null
 }
