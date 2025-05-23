@@ -181,8 +181,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -190,8 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412.5,
-    "collapsed": true
+    "width": 412.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -207,8 +206,9 @@
       "obsidian-kindle-plugin:Sync your Kindle highlights": false
     }
   },
-  "active": "fbe147c5c3a2c323",
+  "active": "6153ce9208a0f48d",
   "lastOpenFiles": [
+    "templates",
     "99_archive",
     "90_assets",
     "80_scripts",
@@ -244,7 +244,6 @@
     "20_literature/kindle/彰-聖書がわかれば世界が見える.md",
     "20_literature/kindle/山崎元、堀江貴文-決定版！　お金の増やし方＆稼ぎ方.md",
     "20_literature/kindle",
-    "20_literature",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
