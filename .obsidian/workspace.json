@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "e1869bcca4175781",
+        "id": "85fb42aeb736124e",
         "type": "tabs",
         "children": [
           {
-            "id": "6153ce9208a0f48d",
+            "id": "131270ffd5b34424",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": "HEAD",
-                "bRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -207,7 +202,7 @@
       "obsidian-kindle-plugin:Sync your Kindle highlights": false
     }
   },
-  "active": "6153ce9208a0f48d",
+  "active": "9e5d541774f132de",
   "lastOpenFiles": [
     "tags.md.md",
     "templates",
