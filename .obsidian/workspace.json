@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "85fb42aeb736124e",
+        "id": "44e28ee8f4acecd9",
         "type": "tabs",
         "children": [
           {
-            "id": "131270ffd5b34424",
+            "id": "172ffa2fe3b57a6d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10_daily/2025-05-24.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2025-05-24"
+              "title": "New tab"
             }
           }
         ]
@@ -88,7 +84,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 299.5
+    "width": 200
   },
   "right": {
     "id": "59a1313dbdda2da4",
@@ -104,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10_daily/2025-05-24.md",
+                "file": "00_inbox/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +110,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-05-24"
+              "title": "Backlinks for Untitled"
             }
           },
           {
@@ -138,13 +134,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "meeting/空調システム室内温度予測モデル - 概要.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 空調システム室内温度予測モデル - 概要"
+              "title": "Outline"
             }
           },
           {
@@ -167,12 +162,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10_daily/2025-05-24.md",
+                "file": "00_inbox/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-05-24"
+              "title": "Outgoing links from Untitled"
             }
           },
           {
@@ -202,14 +197,32 @@
       "obsidian-excalidraw-plugin:New drawing": false,
       "templater-obsidian:Templater": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-kindle-plugin:Sync your Kindle highlights": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9e5d541774f132de",
+  "active": "172ffa2fe3b57a6d",
   "lastOpenFiles": [
+    "00_inbox/サーモ制御応答性検証レポート.md",
+    "00_inbox/cub3D bug.md",
+    "00_inbox/Untitled.md",
+    "00_inbox/山本遥斗（TOEIC 800点）達成計画.md",
+    "00_inbox/プロンプト.md",
+    "00_inbox/生鮮全品データ 需要曲線最適化分析 まとめ資料.md",
+    "00_inbox/起業アイデアの候補.md",
+    "10_daily/2025-07-03.md",
+    "10_daily/Untitled.md",
     "10_daily/2025-05-24.md",
+    "99_archive/42 Minishell 包括的評価テスト.md",
+    "99_archive/🔬 Minishell モジュール詳細分析.md",
+    "99_archive/42_Philosophers.md",
+    "99_archive/🔍 Minishell プロジェクト全体像解説.md",
+    "99_archive/🔄 Minishell 実行フロー詳細解説.md",
     "tags.md.md",
+    "Untitled",
+    "20_literature/kindle/橘玲-バカと無知―人間、この不都合な生きもの―（新潮新書） （言ってはいけない）.md",
+    "00_inbox/時間軸.md",
+    "00_inbox/レポ.md",
+    "20_literature/web/Obsidian・Cursorをフル活用してAI駆動でアウトプットしていく｜Shu.md",
     "templates",
     "99_archive",
     "90_assets",
@@ -221,29 +234,10 @@
     "10_daily",
     "2025-05-23.md",
     "20_literature/youtube",
-    "20_literature/web",
     "20_literature/kindle/ケリー篠沢-漫画家が書いた 人物からわかる「旧約聖書」.md",
     "20_literature/kindle/ダレル・ハフ、高木秀玄-統計でウソをつく法.md",
     "20_literature/kindle/スペンサー・ジョンソン、門田美鈴-チーズはどこへ消えた？.md",
     "20_literature/kindle/ドリー・クラーク、桜田直美、伊藤守-ロングゲーム 今、自分にとっていちばん意味のあることをするために.md",
-    "ケリー篠沢-漫画家が書いた 人物からわかる「旧約聖書」.md",
-    "20_literature/kindle/隆義、一般社団法人日本ディープラーニング協会-深層学習教科書 ディープラーニング G検定（ジェネラリスト）公式テキスト 第2版.md",
-    "20_literature/kindle/鈴木祐-最高の体調　進化医学のアプローチで、過去最高のコンディションを実現する方法.md",
-    "20_literature/kindle/鈴木祐-ＹＯＵＲ　ＴＩＭＥ　ユア・タイム　４０６３の科学データで導き出した、あなたの人生を変える最後の時間術.md",
-    "20_literature/kindle/越川慎司-AI分析でわかった トップ5％リーダーの習慣 トップ5%シリーズ.md",
-    "20_literature/kindle/豊-人工知能は人間を超えるか.md",
-    "20_literature/kindle/石井希尚-超訳 聖書 生きる知恵 エッセンシャル版 ディスカヴァークラシック文庫シリーズ.md",
-    "20_literature/kindle/石井希尚-本当に好きな人と世界でいちばん幸せになる！.md",
-    "20_literature/kindle/石井希尚-明けない夜はない.md",
-    "20_literature/kindle/石井希尚-古代ユダヤ賢人の言葉 超訳聖書.md",
-    "20_literature/kindle/石井希尚-この人と結婚していいの？（新潮文庫）.md",
-    "20_literature/kindle/河野英太郎-99％の人がしていないたった1％の仕事のコツ.md",
-    "20_literature/kindle/橘玲-バカと無知―人間、この不都合な生きもの―（新潮新書） 言ってはいけない.md",
-    "20_literature/kindle/望月安迪-目的ドリブンの思考法.md",
-    "20_literature/kindle/教博-無名の男がたった7年で270億円手に入れた物語.md",
-    "20_literature/kindle/慶一郎-相対化する知性---人工知能が世界の見方をどう変えるのか.md",
-    "20_literature/kindle/彰-聖書がわかれば世界が見える.md",
-    "20_literature/kindle/山崎元、堀江貴文-決定版！　お金の増やし方＆稼ぎ方.md",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
