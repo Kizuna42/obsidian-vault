@@ -9,17 +9,22 @@ This is an **Obsidian personal knowledge vault** organized using the PARA method
 ## Repository Structure
 
 - `00_inbox/` - Temporary notes and unprocessed content
-- `10_daily/` - Daily notes and logs (format: YYYY-MM-DD.md)
-- `20_literature/` - Book summaries and research notes
-  - `20_literature/kindle/` - Kindle book highlights and summaries
-  - `20_literature/meetings/` - Meeting notes and documentation
-- `30_ideas/` - Ideas and creative content (currently empty)
-- `40_projects/` - Active project files (currently empty)
-- `80_scripts/` - Automation scripts (currently empty)
-- `90_assets/` - Media files and resources (currently empty)
-- `99_archive/` - Completed or inactive content
-- `Export-f05c4e37-482b-4c13-92b8-97b944be36c2/` - Exported content from external systems
-- `templates/` - Note templates
+- `01_daily/` - Daily notes and logs (format: YYYY-MM-DD.md)
+- `02_zettelkasten/` - Atomic notes and knowledge connections
+- `10_projects/` - Active project files with deadlines
+- `20_areas/` - Ongoing areas of responsibility
+  - `business/` - Business analysis and planning materials
+  - `education/home-tutor/` - Home tutoring business documentation
+  - `personal/` - Personal development and goals
+  - `programming/` - Software development and learning materials
+  - `technical/` - Technical reports and documentation
+- `30_resources/` - Reference materials for future use
+  - `literature/` - Book summaries and research notes
+  - `references/` - Technical references and documentation
+  - `templates/` - Note templates for consistent formatting
+- `99_archive/` - Completed or inactive content (42 school projects, etc.)
+- `99_meta/` - Vault maintenance scripts and documentation
+- `Export-f05c4e37-482b-4c13-92b8-97b944be36c2/` - Imported content from external systems
 - `.obsidian/` - Obsidian app configuration and plugins
 
 ## Obsidian Configuration
@@ -112,3 +117,44 @@ This vault relies heavily on community plugins for enhanced functionality:
 - The "codebase" consists entirely of markdown files and Obsidian configuration
 - All automation is handled through Obsidian plugins, not external scripts
 - Content is primarily in markdown format with some CSV exports from external systems
+
+## Vault Maintenance Tools
+
+The `99_meta/` directory contains Python scripts for vault maintenance:
+
+### Cleanup Operations
+- **`cleanup_uuid_files.py`** - Removes UUID suffixes from filenames and updates internal links
+  - Usage: `python3 99_meta/cleanup_uuid_files.py`
+  - Handles both UUID patterns (8-4-4-4-12) and 32-character hex suffixes
+  - Automatically updates markdown internal links after renaming
+  - Prevents naming conflicts by appending `_cleaned` suffix when needed
+
+- **`check_broken_links.py`** - Identifies broken internal links in the vault
+  - Usage: `python3 99_meta/check_broken_links.py`
+  - Scans all markdown files for `[[link]]` and `[text](link.md)` patterns
+  - Generates detailed report of broken links by file
+  - Essential for maintaining link integrity after file reorganization
+
+### Maintenance Commands
+When working with the vault structure:
+1. **Link integrity check**: `python3 99_meta/check_broken_links.py`
+2. **UUID cleanup**: `python3 99_meta/cleanup_uuid_files.py`
+3. **Git status check**: Standard git commands work due to obsidian-git integration
+
+## Content Architecture
+
+### Zettelkasten Implementation
+- `02_zettelkasten/` contains atomic notes with explicit connection mapping
+- Subdirectories: `concepts/`, `connections/`, `insights/`
+- Focus on linking ideas rather than hierarchical organization
+
+### PARA Method Structure
+- **Projects (10_projects/)**: Time-bound outcomes with deadlines
+- **Areas (20_areas/)**: Ongoing standards to maintain
+- **Resources (30_resources/)**: Topics of ongoing interest
+- **Archives (99_archive/)**: Inactive items from the above categories
+
+### Export Data Management
+- External system imports preserved in `Export-*/` directories
+- CSV files contain structured data from external tools
+- Japanese content maintained in original language for cultural context
