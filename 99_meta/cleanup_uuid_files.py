@@ -8,44 +8,56 @@ import os
 import re
 import shutil
 from pathlib import Path
+import argparse
+from urllib.parse import quote, unquote
+
+UUID_PATTERN = r"\s+[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}"
+HEX32_PATTERN = r"\s+[a-f0-9]{32}"
+
+
+def clean_name_component(name: str) -> str:
+    cleaned = re.sub(UUID_PATTERN, '', name, flags=re.IGNORECASE)
+    cleaned = re.sub(HEX32_PATTERN, '', cleaned, flags=re.IGNORECASE)
+    return cleaned.strip()
+
 
 def clean_filename(filename):
     """Remove UUID patterns from filename"""
-    # Pattern for UUID: 8-4-4-4-12 hex characters
-    uuid_pattern = r'\s+[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}'
-    # Pattern for short hex suffixes
-    hex_pattern = r'\s+[a-f0-9]{32}'
-    
-    cleaned = re.sub(uuid_pattern, '', filename, flags=re.IGNORECASE)
-    cleaned = re.sub(hex_pattern, '', cleaned, flags=re.IGNORECASE)
-    
-    return cleaned.strip()
+    return clean_name_component(filename)
 
-def update_markdown_links(file_path, old_name, new_name):
-    """Update markdown internal links in a file"""
+
+def update_markdown_links_in_content(content: str, replacements: list[tuple[str, str]]) -> str:
+    updated = content
+    for old_rel, new_rel in replacements:
+        old_raw = old_rel
+        new_raw = new_rel
+        old_enc = quote(old_rel, safe='/._-() ')
+        new_enc = quote(new_rel, safe='/._-() ')
+        # [[old]]
+        updated = re.sub(r"\\[\\[" + re.escape(old_raw) + r"\\]\\]", f"[[{new_raw}]]", updated)
+        updated = re.sub(r"\\[\\[" + re.escape(old_enc) + r"\\]\\]", f"[[{new_enc}]]", updated)
+        # [[old|alias]]
+        updated = re.sub(r"\\[\\[" + re.escape(old_raw) + r"\|", f"[[{new_raw}|", updated)
+        updated = re.sub(r"\\[\\[" + re.escape(old_enc) + r"\|", f"[[{new_enc}|", updated)
+        # ](old)
+        updated = re.sub(r"\]\(" + re.escape(old_raw) + r"\)", f"]({new_raw})", updated)
+        updated = re.sub(r"\]\(" + re.escape(old_enc) + r"\)", f"]({new_enc})", updated)
+    return updated
+
+
+def update_markdown_links(file_path: Path, replacements: list[tuple[str, str]]):
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
-        
-        # Update [[old_name]] style links
-        old_link_pattern = f"\\[\\[{re.escape(old_name)}\\]\\]"
-        new_link = f"[[{new_name}]]"
-        updated_content = re.sub(old_link_pattern, new_link, content)
-        
-        # Update [text](old_name) style links  
-        old_md_pattern = f"\\]\\({re.escape(old_name)}\\)"
-        new_md_link = f"]({new_name})"
-        updated_content = re.sub(old_md_pattern, new_md_link, updated_content)
-        
+        updated_content = update_markdown_links_in_content(content, replacements)
         if updated_content != content:
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(updated_content)
             return True
-            
     except Exception as e:
         print(f"Error updating {file_path}: {e}")
-        
     return False
+
 
 def cleanup_uuid_files(vault_path):
     """Main function to clean up UUID filenames"""
@@ -95,10 +107,13 @@ def cleanup_uuid_files(vault_path):
             if filename.endswith('.md'):
                 file_path = Path(root) / filename
                 
+                # Prepare replacements for this file
+                replacements = []
                 for _, info in renamed_files.items():
-                    if update_markdown_links(file_path, info['old_name'], info['new_name']):
-                        updated_files += 1
-                        break
+                    replacements.append((info['old_name'], info['new_name']))
+                
+                if update_markdown_links(file_path, replacements):
+                    updated_files += 1
     
     print(f"Updated links in {updated_files} markdown files")
     return len(renamed_files), updated_files
