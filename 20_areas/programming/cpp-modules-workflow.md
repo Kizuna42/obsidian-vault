@@ -1,3 +1,15 @@
+---
+title: "cpp-modules-workflow"
+created: 2025-08-11
+updated: 2025-08-11
+tags: []
+category: area
+status: active
+zettel_id: 202508111439
+aliases: []
+related: []
+---
+
 
 ```markdown
 # C++ Module 01-04 実装プロジェクト - ワークフロー定義書

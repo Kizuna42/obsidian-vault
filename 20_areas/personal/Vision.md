@@ -1,3 +1,15 @@
+---
+title: "Vision"
+created: 2025-08-11
+updated: 2025-08-11
+tags: []
+category: area
+status: active
+zettel_id: 202508111439
+aliases: []
+related: []
+---
+
 # Vision
 
 **スティーブ・ジョブズみたいにその場にいる人全員に鳥肌を立たせるような革新的なアイディアを英語でプレゼンしている自分**

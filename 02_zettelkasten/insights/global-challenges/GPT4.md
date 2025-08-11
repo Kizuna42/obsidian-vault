@@ -1,3 +1,15 @@
+---
+title: "GPT4"
+created: 2025-08-11
+updated: 2025-08-11
+tags: []
+category: concept
+status: active
+zettel_id: 202508111439
+aliases: []
+related: []
+---
+
 # GPT4
 
 - これまでに桁違いのデータ学習量（司法試験・MBA）

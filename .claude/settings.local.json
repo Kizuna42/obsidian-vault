@@ -16,7 +16,11 @@
       "Bash(chmod:*)",
       "Bash(./99_meta/zettelkasten_optimization.sh backup:*)",
       "Bash(./99_meta/zettelkasten_optimization.sh:*)",
-      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh backup)"
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh backup)",
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh cleanup)",
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh consolidate)",
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh frontmatter)",
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh validate)"
     ],
     "deny": []
   }

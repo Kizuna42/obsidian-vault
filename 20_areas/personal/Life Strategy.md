@@ -1,3 +1,15 @@
+---
+title: "Life Strategy"
+created: 2025-08-11
+updated: 2025-08-11
+tags: []
+category: area
+status: active
+zettel_id: 202508111439
+aliases: []
+related: []
+---
+
 # Life Strategy
 
 作家のヘルマン・ヘッセやジョージ・バーナード・ショー、アーネスト・ヘミングウェー、
