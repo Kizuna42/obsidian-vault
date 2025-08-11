@@ -12,7 +12,11 @@
       "Bash(python:*)",
       "Bash(git push:*)",
       "Bash(touch:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(chmod:*)",
+      "Bash(./99_meta/zettelkasten_optimization.sh backup:*)",
+      "Bash(./99_meta/zettelkasten_optimization.sh:*)",
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh backup)"
     ],
     "deny": []
   }
