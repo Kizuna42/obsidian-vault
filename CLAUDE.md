@@ -11,20 +11,25 @@ This is an **Obsidian personal knowledge vault** organized using the PARA method
 - `00_inbox/` - Temporary notes and unprocessed content
 - `01_daily/` - Daily notes and logs (format: YYYY-MM-DD.md)
 - `02_zettelkasten/` - Atomic notes and knowledge connections
+  - `concepts/` - Core concepts and ideas
+  - `insights/` - Discovered insights and observations
+  - `connections/` - Relationship mappings between concepts
 - `10_projects/` - Active project files with deadlines
 - `20_areas/` - Ongoing areas of responsibility
   - `business/` - Business analysis and planning materials
-  - `education/home-tutor/` - Home tutoring business documentation
+    - `home-tutor/` - Home tutoring business documentation
+  - `education/` - Learning and educational materials
   - `personal/` - Personal development and goals
   - `programming/` - Software development and learning materials
   - `technical/` - Technical reports and documentation
 - `30_resources/` - Reference materials for future use
   - `literature/` - Book summaries and research notes
   - `references/` - Technical references and documentation
-  - `templates/` - Note templates for consistent formatting
-- `99_archive/` - Completed or inactive content (42 school projects, etc.)
+  - `templates/` - Note templates for consistent formatting (Daily, Project, Literature, Zettelkasten)
+- `90_archive/` - Completed or inactive content
+  - `duplicates_20250811/` - Archived duplicate files
+  - `ingested_exports_20250811/` - Archived imported content
 - `99_meta/` - Vault maintenance scripts and documentation
-- `Export-f05c4e37-482b-4c13-92b8-97b944be36c2/` - Imported content from external systems
 - `.obsidian/` - Obsidian app configuration and plugins
 
 ## Obsidian Configuration
@@ -59,7 +64,7 @@ The vault uses the obsidian-git plugin with automated backup:
 #### Content Management Commands
 - Use Obsidian's built-in search (Ctrl/Cmd+Shift+F) or omnisearch plugin for enhanced search
 - Dataview plugin enables database-like queries using `dataview` code blocks
-- Templater plugin provides advanced template functionality (no templates currently configured)
+- Templater plugin provides advanced template functionality with 4 active templates
 
 ### File Naming Conventions
 - Daily notes: `YYYY-MM-DD.md`
@@ -74,10 +79,11 @@ The vault uses the obsidian-git plugin with automated backup:
 - **Hierarchical structure**: Folders can contain both markdown files and subfolders for detailed organization
 
 ### Note-taking Practices
-- Daily reflections and progress tracking in `10_daily/`
-- Book summaries with key insights in `20_literature/kindle/`
-- Project documentation and meeting notes under respective folders
-- Startup and business planning materials in personal sections
+- Daily reflections and progress tracking in `01_daily/`
+- Book summaries with key insights in `30_resources/literature/`
+- Project documentation and meeting notes in `10_projects/`
+- Atomic knowledge notes in `02_zettelkasten/` with explicit linking
+- Startup and business planning materials in `20_areas/business/`
 
 ## Development Context
 
@@ -123,23 +129,39 @@ This vault relies heavily on community plugins for enhanced functionality:
 The `99_meta/` directory contains Python scripts for vault maintenance:
 
 ### Cleanup Operations
-- **`cleanup_uuid_files.py`** - Removes UUID suffixes from filenames and updates internal links
-  - Usage: `python3 99_meta/cleanup_uuid_files.py`
-  - Handles both UUID patterns (8-4-4-4-12) and 32-character hex suffixes
+- **`cleanup_uuid_files.py`** - Original UUID cleanup script (legacy)
+  - Basic UUID pattern removal and link updates
+  
+- **`enhanced_uuid_cleanup.py`** - Advanced UUID cleanup with improved pattern matching
+  - Usage: `python3 99_meta/enhanced_uuid_cleanup.py`
+  - Handles space-prefixed UUID patterns and 32-character hex suffixes
   - Automatically updates markdown internal links after renaming
-  - Prevents naming conflicts by appending `_cleaned` suffix when needed
+  - Successfully processed 1,695 files and renamed 76 during optimization
 
 - **`check_broken_links.py`** - Identifies broken internal links in the vault
   - Usage: `python3 99_meta/check_broken_links.py`
-  - Scans all markdown files for `` and `[text](link.md)` patterns
+  - Scans all markdown files for `[[link]]` and `[text](link.md)` patterns
   - Generates detailed report of broken links by file
   - Essential for maintaining link integrity after file reorganization
+
+- **`fix_broken_links.py`** - Repairs common broken link patterns
+  - Usage: `python3 99_meta/fix_broken_links.py`
+  - Fixes template placeholders, URL-encoded links, and generic broken patterns
+  - Successfully repaired 29 files during vault optimization
 
 ### Maintenance Commands
 When working with the vault structure:
 1. **Link integrity check**: `python3 99_meta/check_broken_links.py`
-2. **UUID cleanup**: `python3 99_meta/cleanup_uuid_files.py`
-3. **Git status check**: Standard git commands work due to obsidian-git integration
+2. **UUID cleanup (advanced)**: `python3 99_meta/enhanced_uuid_cleanup.py`
+3. **Broken link repair**: `python3 99_meta/fix_broken_links.py`
+4. **Git status check**: Standard git commands work due to obsidian-git integration
+
+### Optimization History
+- **2025-08-11**: Complete vault optimization performed
+  - UUID cleanup: 76 files renamed from 1,695 processed
+  - Link repair: 29 files fixed for template placeholders and encoding issues
+  - Structure consolidation: Export folders archived, duplicates removed
+  - Template system: 4 comprehensive templates implemented
 
 ## Content Architecture
 
@@ -154,7 +176,15 @@ When working with the vault structure:
 - **Resources (30_resources/)**: Topics of ongoing interest
 - **Archives (99_archive/)**: Inactive items from the above categories
 
-### Export Data Management
-- External system imports preserved in `Export-*/` directories
+### Archive Management
+- Historical imports archived in `90_archive/ingested_exports_20250811/`
+- Duplicate content archived in `90_archive/duplicates_20250811/`
 - CSV files contain structured data from external tools
 - Japanese content maintained in original language for cultural context
+
+### Template System
+The vault includes 4 comprehensive templates in `30_resources/templates/`:
+- **Daily Note Template**: Daily planning with Dataview queries for task tracking
+- **Project Template**: Comprehensive project management with phases and retrospectives
+- **Literature Note Template**: Book/article reviews with insights and connections
+- **Zettelkasten Note Template**: Atomic note structure with explicit concept linking
