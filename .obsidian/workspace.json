@@ -11,10 +11,14 @@
             "id": "172ffa2fe3b57a6d",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "20_areas/business/startup/startup-ideas-candidates.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "startup-ideas-candidates"
             }
           }
         ]
@@ -202,6 +206,23 @@
   },
   "active": "172ffa2fe3b57a6d",
   "lastOpenFiles": [
+    "20_areas/business/startup/basic-plan.md",
+    "20_areas/business/home-tutor/雇用形態.md",
+    "20_areas/business/home-tutor/開発ルールブック (1).md",
+    "20_areas/business/home-tutor/鈴木舜大.md",
+    "20_areas/business/home-tutor/結心.md",
+    "20_areas/business/home-tutor/土手ハル.md",
+    "20_areas/business/home-tutor/挨拶定型分.md",
+    "20_areas/business/home-tutor/言語ごとの翻訳データの管理 (1).md",
+    "20_areas/business/home-tutor/概要.md",
+    "20_areas/business/home-tutor/ここな/4月.md",
+    "10_projects/山本遥斗（TOEIC 800点）達成計画.md",
+    "02_zettelkasten/insights/global-challenges/おすすめの住まい.md",
+    "02_zettelkasten/insights/global-challenges/TC.md",
+    "02_zettelkasten/insights/global-challenges/Dnite.md",
+    "02_zettelkasten/insights/global-challenges/2025-08-11-global-challenges-database.md",
+    "02_zettelkasten/insights/global-challenges/2025 1 5.md",
+    "02_zettelkasten/concepts/2025-08-11-metaverse-keywords.md",
     "99_meta/check_broken_links.py",
     "99_meta/check_broken_links.py.tmp.12093.1754854757121",
     "00_inbox/サーモ制御応答性検証レポート.md",
@@ -213,18 +234,7 @@
     "00_inbox/起業アイデアの候補.md",
     "10_daily/2025-07-03.md",
     "10_daily/Untitled.md",
-    "10_daily/2025-05-24.md",
-    "99_archive/42 Minishell 包括的評価テスト.md",
-    "99_archive/🔬 Minishell モジュール詳細分析.md",
-    "99_archive/42_Philosophers.md",
-    "99_archive/🔍 Minishell プロジェクト全体像解説.md",
-    "99_archive/🔄 Minishell 実行フロー詳細解説.md",
-    "tags.md.md",
     "Untitled",
-    "20_literature/kindle/橘玲-バカと無知―人間、この不都合な生きもの―（新潮新書） （言ってはいけない）.md",
-    "00_inbox/時間軸.md",
-    "00_inbox/レポ.md",
-    "20_literature/web/Obsidian・Cursorをフル活用してAI駆動でアウトプットしていく｜Shu.md",
     "templates",
     "99_archive",
     "90_assets",
@@ -232,12 +242,6 @@
     "40_projects",
     "30_ideas",
     "00_inbox",
-    "20_literature/meetings/空調システム室内温度予測モデル - 概要.md",
-    "10_daily",
-    "2025-05-23.md",
-    "20_literature/kindle/ケリー篠沢-漫画家が書いた 人物からわかる「旧約聖書」.md",
-    "20_literature/kindle/ダレル・ハフ、高木秀玄-統計でウソをつく法.md",
-    "20_literature/kindle/スペンサー・ジョンソン、門田美鈴-チーズはどこへ消えた？.md",
     "Untitled 1.canvas",
     "Untitled.canvas"
   ]
