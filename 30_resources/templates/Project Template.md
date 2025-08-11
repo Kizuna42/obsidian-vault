@@ -42,7 +42,7 @@ WHERE contains(tags, "{{title}}")
 ### 関連ノート
 ```dataview
 LIST
-FROM [[{{title}}]]
+FROM 
 WHERE file.name != "{{title}}"
 ```
 

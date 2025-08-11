@@ -11,7 +11,8 @@
       "Bash(find:*)",
       "Bash(python:*)",
       "Bash(git push:*)",
-      "Bash(touch:*)"
+      "Bash(touch:*)",
+      "Bash(git add:*)"
     ],
     "deny": []
   }

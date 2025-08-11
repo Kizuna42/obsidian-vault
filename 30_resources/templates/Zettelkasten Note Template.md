@@ -45,7 +45,7 @@ aliases: []
 **関連ネットワーク**: 
 ```dataview
 LIST
-FROM [[{{title}}]]
+FROM 
 WHERE file.path != this.file.path
 SORT file.name ASC
 ```
@@ -54,6 +54,6 @@ SORT file.name ASC
 ```dataview  
 LIST
 FROM "02_zettelkasten"
-WHERE contains(file.outlinks, [[{{title}}]])
+WHERE contains(file.outlinks, )
 SORT file.name ASC
 ```
