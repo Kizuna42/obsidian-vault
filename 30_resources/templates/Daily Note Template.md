@@ -49,4 +49,4 @@ LIMIT 10
 夜: ⭐⭐⭐⭐⭐
 
 ---
-← [[{{date:YYYY-MM-DD|%j - 1}}]] | [[{{date:YYYY-MM-DD|%j + 1}}]] →
+←  |  →

@@ -210,7 +210,7 @@ EOF
 ```bash
 # リンク切れのチェック
 find . -name "*.md" -exec grep -l "\[\[.*\]\]" {} \; | \
-xargs grep -o "\[\[[^]]*\]\]" | \
+xargs grep -o "\[\*\]\]" | \
 sort | uniq -c | sort -nr > link_analysis.txt
 
 # Obsidian 再起動後の動作確認
@@ -279,7 +279,7 @@ SORT file.name ASC
 - 
 
 ---
-[[{{date:YYYY-MM-DD|%j - 1}}]] ← → [[{{date:YYYY-MM-DD|%j + 1}}]]
+ ← → 
 ```
 
 ### プロジェクトテンプレート

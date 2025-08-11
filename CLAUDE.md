@@ -131,7 +131,7 @@ The `99_meta/` directory contains Python scripts for vault maintenance:
 
 - **`check_broken_links.py`** - Identifies broken internal links in the vault
   - Usage: `python3 99_meta/check_broken_links.py`
-  - Scans all markdown files for `[[link]]` and `[text](link.md)` patterns
+  - Scans all markdown files for `` and `[text](link.md)` patterns
   - Generates detailed report of broken links by file
   - Essential for maintaining link integrity after file reorganization
 
