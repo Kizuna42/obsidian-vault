@@ -20,8 +20,14 @@
       "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh cleanup)",
       "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh consolidate)",
       "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh frontmatter)",
-      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh validate)"
+      "Bash(DRY_RUN=false ./99_meta/zettelkasten_optimization.sh validate)",
+      "Bash(git branch:*)",
+      "Bash(shasum:*)",
+      "Bash(cat:*)",
+      "Bash({} ;)",
+      "Bash(rm:*)"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "acceptEdits"
   }
 }

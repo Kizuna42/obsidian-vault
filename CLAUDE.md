@@ -13,7 +13,12 @@ This is an **Obsidian personal knowledge vault** organized using the PARA method
 - `02_zettelkasten/` - Atomic notes and knowledge connections
   - `concepts/` - Core concepts and ideas
   - `insights/` - Discovered insights and observations
+    - `business/` - Business-related insights
+    - `personal/` - Personal development insights
+    - `technical/` - Technical insights
+    - `global-challenges/` - Global challenges database and insights
   - `connections/` - Relationship mappings between concepts
+  - `index/` - Index files and structured overviews
 - `10_projects/` - Active project files with deadlines
 - `20_areas/` - Ongoing areas of responsibility
   - `business/` - Business analysis and planning materials
@@ -149,12 +154,20 @@ The `99_meta/` directory contains Python scripts for vault maintenance:
   - Fixes template placeholders, URL-encoded links, and generic broken patterns
   - Successfully repaired 29 files during vault optimization
 
+- **`zettelkasten_optimization.sh`** - Comprehensive vault optimization script
+  - Usage: `./99_meta/zettelkasten_optimization.sh [backup|cleanup|consolidate|frontmatter|validate|all]`
+  - Supports dry-run mode (default): `DRY_RUN=true ./99_meta/zettelkasten_optimization.sh all`
+  - Execute mode: `DRY_RUN=false ./99_meta/zettelkasten_optimization.sh all`
+  - Phases: backup, cleanup empty files, consolidate IDEA FLASH GLOBAL, add frontmatter, validate links
+  - Automatically creates git branches and commits for safe operations
+
 ### Maintenance Commands
 When working with the vault structure:
-1. **Link integrity check**: `python3 99_meta/check_broken_links.py`
-2. **UUID cleanup (advanced)**: `python3 99_meta/enhanced_uuid_cleanup.py`
-3. **Broken link repair**: `python3 99_meta/fix_broken_links.py`
-4. **Git status check**: Standard git commands work due to obsidian-git integration
+1. **Comprehensive optimization**: `./99_meta/zettelkasten_optimization.sh all` (dry-run by default)
+2. **Link integrity check**: `python3 99_meta/check_broken_links.py`
+3. **UUID cleanup (advanced)**: `python3 99_meta/enhanced_uuid_cleanup.py`
+4. **Broken link repair**: `python3 99_meta/fix_broken_links.py`
+5. **Git status check**: Standard git commands work due to obsidian-git integration
 
 ### Optimization History
 - **2025-08-11**: Complete vault optimization performed
@@ -174,7 +187,7 @@ When working with the vault structure:
 - **Projects (10_projects/)**: Time-bound outcomes with deadlines
 - **Areas (20_areas/)**: Ongoing standards to maintain
 - **Resources (30_resources/)**: Topics of ongoing interest
-- **Archives (99_archive/)**: Inactive items from the above categories
+- **Archives (90_archive/)**: Inactive items from the above categories
 
 ### Archive Management
 - Historical imports archived in `90_archive/ingested_exports_20250811/`

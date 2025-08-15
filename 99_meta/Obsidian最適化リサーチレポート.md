@@ -194,7 +194,7 @@ def update_internal_links(directory):
                 # UUID suffixed links を clean name に置換
                 updated = re.sub(
                     r'\[\[([^]]+)\s+[a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12}[^]]*\]\]',
-                    r'[[\1]]',
+                    r'参考資料1',
                     content
                 )
                 

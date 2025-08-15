@@ -1,0 +1,20 @@
+[0;32m[2025-08-14 19:40:46][0m Starting Zettelkasten Optimization (DRY_RUN=false)
+[0;32m[2025-08-14 19:40:46][0m Target directories: 02_zettelkasten/insights, 20_areas
+[0;32m[2025-08-14 19:40:46][0m === Phase 1: Empty Files Cleanup and Misplacement Fix ===
+[1;33m[WARNING][0m File not found: 02_zettelkasten/insights/global-challenges/Notion使い方.md
+[1;33m[WARNING][0m File not found: 20_areas/business/home-tutor/土手ひまり.md
+[1;33m[WARNING][0m File not found: 20_areas/business/home-tutor/廣瀬こう.md
+[1;33m[WARNING][0m File not found: 20_areas/business/home-tutor/廣瀬りょう.md
+[1;33m[WARNING][0m File not found: 20_areas/programming/archive/AI経済社会学/第1回.md
+[1;33m[WARNING][0m File not found: 20_areas/programming/archive/AI経済社会学/第3回.md
+[1;33m[WARNING][0m File not found: 20_areas/programming/archive/AI経済社会学/第4回.md
+[1;33m[WARNING][0m File not found: 20_areas/programming/archive/AI経済社会学/第5回.md
+[1;33m[WARNING][0m File not found: 20_areas/programming/archive/AI経済社会学/第7回.md
+[1;33m[WARNING][0m File not found: 20_areas/education/academy/そうだったのか日本/藤沢.md
+[1;33m[WARNING][0m Source file not found: 02_zettelkasten/insights/global-challenges/Untitled.md
+[1;33m[WARNING][0m Source file not found: 02_zettelkasten/insights/global-challenges/信仰.md
+[1;33m[WARNING][0m Source file not found: 02_zettelkasten/insights/起業アイデアの候補.md
+[1;33m[WARNING][0m Source file not found: 20_areas/business/startup-basic-plan.md
+[0;32m[2025-08-14 19:40:46][0m Phase 1 cleanup completed
+[0;32m[2025-08-14 19:40:46][0m Optimization phase 'cleanup' completed successfully
+[0;32m[2025-08-14 19:40:46][0m Log file: /Users/kizuna/Obsidian/Vault/99_meta/optimization_log_20250814_194046.log

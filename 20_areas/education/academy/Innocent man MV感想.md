@@ -107,4 +107,4 @@
 - 社会性・マナー・常識・声の出し方・立ち振る舞い・not KY
 - 若いエネルギーを世界に示す
 
-[Keigomats感想](Innocent%20man%20MV%E6%84%9F%E6%83%B3%201dc8b135275d4172911eee8b7bd5b53b/Keigomats%E6%84%9F%E6%83%B3%209204afd43284479ca87cdb24222a0842.md)
+## Keigomats感想
