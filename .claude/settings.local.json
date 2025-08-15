@@ -25,7 +25,15 @@
       "Bash(shasum:*)",
       "Bash(cat:*)",
       "Bash({} ;)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(for:*)",
+      "Bash(do mv \"/Users/kizuna/Obsidian/Vault/30_resources/literature/$file\" \"/Users/kizuna/Obsidian/Vault/30_resources/literature/psychology-self-help/\")",
+      "Bash(done)",
+      "Bash(do mv \"/Users/kizuna/Obsidian/Vault/30_resources/literature/$file\" \"/Users/kizuna/Obsidian/Vault/30_resources/literature/business-startup/\")",
+      "Bash(do mv \"/Users/kizuna/Obsidian/Vault/30_resources/literature/$file\" \"/Users/kizuna/Obsidian/Vault/30_resources/literature/academic-research/\")",
+      "Bash(do mv \"/Users/kizuna/Obsidian/Vault/20_areas/personal/$file\" \"/Users/kizuna/Obsidian/Vault/20_areas/personal/goals-planning/\")",
+      "Bash(do mv \"/Users/kizuna/Obsidian/Vault/20_areas/personal/$file\" \"/Users/kizuna/Obsidian/Vault/20_areas/personal/lifestyle-hobbies/\")",
+      "Bash(do mv \"/Users/kizuna/Obsidian/Vault/20_areas/personal/$file\" \"/Users/kizuna/Obsidian/Vault/20_areas/personal/entertainment-media/\")"
     ],
     "deny": [],
     "defaultMode": "acceptEdits"
