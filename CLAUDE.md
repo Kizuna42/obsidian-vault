@@ -109,7 +109,7 @@ This vault relies heavily on community plugins for enhanced functionality:
 - **dataview**: Enables SQL-like queries for note aggregation and analysis
 - **excalibrain**: Provides visual knowledge graph representation  
 - **obsidian-excalidraw-plugin**: Integrated drawing and diagramming
-- **templater-obsidian**: Advanced templating system (currently no templates configured)
+- **templater-obsidian**: Advanced templating system with 4 active templates
 - **omnisearch**: Enhanced full-text search capabilities
 - **obsidian-git**: Automated version control and backup system
 - **typing-assistant**: Writing assistance and productivity features
@@ -131,42 +131,50 @@ This vault relies heavily on community plugins for enhanced functionality:
 
 ## Vault Maintenance Tools
 
-The `99_meta/` directory contains Python scripts for vault maintenance:
+The `99_meta/` directory contains organized maintenance tools:
+
+```
+99_meta/
+├── scripts/          # Maintenance scripts
+├── docs/            # Documentation and reports
+└── logs/            # Log files
+    └── archive/     # Archived logs
+```
 
 ### Cleanup Operations
-- **`cleanup_uuid_files.py`** - Original UUID cleanup script (legacy)
+- **`scripts/cleanup_uuid_files.py`** - Original UUID cleanup script (legacy)
   - Basic UUID pattern removal and link updates
   
-- **`enhanced_uuid_cleanup.py`** - Advanced UUID cleanup with improved pattern matching
-  - Usage: `python3 99_meta/enhanced_uuid_cleanup.py`
+- **`scripts/enhanced_uuid_cleanup.py`** - Advanced UUID cleanup with improved pattern matching
+  - Usage: `python3 99_meta/scripts/enhanced_uuid_cleanup.py`
   - Handles space-prefixed UUID patterns and 32-character hex suffixes
   - Automatically updates markdown internal links after renaming
   - Successfully processed 1,695 files and renamed 76 during optimization
 
-- **`check_broken_links.py`** - Identifies broken internal links in the vault
-  - Usage: `python3 99_meta/check_broken_links.py`
+- **`scripts/check_broken_links.py`** - Identifies broken internal links in the vault
+  - Usage: `python3 99_meta/scripts/check_broken_links.py`
   - Scans all markdown files for `[[link]]` and `[text](link.md)` patterns
   - Generates detailed report of broken links by file
   - Essential for maintaining link integrity after file reorganization
 
-- **`fix_broken_links.py`** - Repairs common broken link patterns
-  - Usage: `python3 99_meta/fix_broken_links.py`
+- **`scripts/fix_broken_links.py`** - Repairs common broken link patterns
+  - Usage: `python3 99_meta/scripts/fix_broken_links.py`
   - Fixes template placeholders, URL-encoded links, and generic broken patterns
   - Successfully repaired 29 files during vault optimization
 
-- **`zettelkasten_optimization.sh`** - Comprehensive vault optimization script
-  - Usage: `./99_meta/zettelkasten_optimization.sh [backup|cleanup|consolidate|frontmatter|validate|all]`
-  - Supports dry-run mode (default): `DRY_RUN=true ./99_meta/zettelkasten_optimization.sh all`
-  - Execute mode: `DRY_RUN=false ./99_meta/zettelkasten_optimization.sh all`
+- **`scripts/zettelkasten_optimization.sh`** - Comprehensive vault optimization script
+  - Usage: `./99_meta/scripts/zettelkasten_optimization.sh [backup|cleanup|consolidate|frontmatter|validate|all]`
+  - Supports dry-run mode (default): `DRY_RUN=true ./99_meta/scripts/zettelkasten_optimization.sh all`
+  - Execute mode: `DRY_RUN=false ./99_meta/scripts/zettelkasten_optimization.sh all`
   - Phases: backup, cleanup empty files, consolidate IDEA FLASH GLOBAL, add frontmatter, validate links
   - Automatically creates git branches and commits for safe operations
 
 ### Maintenance Commands
 When working with the vault structure:
-1. **Comprehensive optimization**: `./99_meta/zettelkasten_optimization.sh all` (dry-run by default)
-2. **Link integrity check**: `python3 99_meta/check_broken_links.py`
-3. **UUID cleanup (advanced)**: `python3 99_meta/enhanced_uuid_cleanup.py`
-4. **Broken link repair**: `python3 99_meta/fix_broken_links.py`
+1. **Comprehensive optimization**: `./99_meta/scripts/zettelkasten_optimization.sh all` (dry-run by default)
+2. **Link integrity check**: `python3 99_meta/scripts/check_broken_links.py`
+3. **UUID cleanup (advanced)**: `python3 99_meta/scripts/enhanced_uuid_cleanup.py`
+4. **Broken link repair**: `python3 99_meta/scripts/fix_broken_links.py`
 5. **Git status check**: Standard git commands work due to obsidian-git integration
 
 ### Optimization History
