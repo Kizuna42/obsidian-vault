@@ -128,6 +128,8 @@ This vault relies heavily on community plugins for enhanced functionality:
 - The "codebase" consists entirely of markdown files and Obsidian configuration
 - All automation is handled through Obsidian plugins, not external scripts
 - Content is primarily in markdown format with some CSV exports from external systems
+- **Python Scripts**: Vault maintenance tools in `99_meta/scripts/` require Python 3.x
+- **Shell Scripts**: Bash scripts use `/bin/bash` and are macOS/Linux compatible
 
 ## Vault Maintenance Tools
 
