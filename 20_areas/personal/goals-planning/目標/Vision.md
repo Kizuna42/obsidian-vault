@@ -7,10 +7,12 @@ category: area
 status: active
 zettel_id: 202508111439
 aliases: []
-related: []
+related: [石野絆：AI起業による売上100万円達成計画, Life Strategy, やりたいこと]
 ---
 
 # Vision
+
+> **関連ノート**: [[石野絆：AI起業による売上100万円達成計画]] | [[Life Strategy]] | [[やりたいこと]]
 
 **スティーブ・ジョブズみたいにその場にいる人全員に鳥肌を立たせるような革新的なアイディアを英語でプレゼンしている自分**
 

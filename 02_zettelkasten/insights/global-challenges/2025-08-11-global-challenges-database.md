@@ -2,7 +2,7 @@
 title: "Global Challenges Database"
 created: 2025-08-11
 updated: 2025-08-11
-tags: [global-challenges, database, insights]
+tags: [global-challenges, database, insights, business-opportunities, market-research]
 category: insight
 status: active
 zettel_id: 202508111200
