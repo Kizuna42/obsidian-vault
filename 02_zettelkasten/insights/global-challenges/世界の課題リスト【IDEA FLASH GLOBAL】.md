@@ -1,3 +1,0 @@
-# 世界の課題リスト【IDEA FLASH GLOBAL】
-
-## IDEA FLASH GLOBAL データ (CSV)
